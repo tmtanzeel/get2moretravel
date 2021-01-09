@@ -20,7 +20,12 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "bootstrap": "^5.0.0-beta1",
     "core-js": "^2.5.4",
+    "jquery": "^3.5.1",
+    "ngx-bootstrap": "^6.2.0",
+    "primeicons": "^4.1.0",
+    "primeng": "^11.1.0-rc.1",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
   },
