@@ -1,1 +1,123 @@
-<h2>helo</h2>
+<div class="headers">
+    <h1>Your feedback is important to us</h1>
+    <h2>~we read all of them~</h2>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-center" style="margin-top: 40px;">
+        <form style="width: 50%; align-self: center;" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <label class="label" for="email">Your email address:</label>
+                    <input class="form-control" type="email" placeholder="Email" email name="email" ngModel required #email="ngModel">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <label class="label" for="experience">How did you find the booking experience with Get2more Travel ?</label>
+                    <select class="form-select" id="experience" name="experience" experience ngModel #experience="ngModel">
+                        <option selected>Choose...</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="verygood">Very good</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                    <label class="label" for="hear">How did you hear about us?</label>
+                    <select class="form-select" id="experience" name="experience" experience ngModel #experience="ngModel">
+                        <option selected>Choose...</option>
+                        <option value="Excellent">From a friend</option>
+                        <option value="verygood">Local Ad</option>
+                        <option value="good">Social media</option>
+                        <option value="fair">News paper</option>
+                        <option value="poor">Another travel agent</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                    <label class="label" for="hotels">Hotels / Accommodation used</label>
+                    <select class="form-select" id="hotels" name="hotels" hotels ngModel #hotels="ngModel">
+                        <option selected>Choose...</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Very good">Very good</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Poor">Poor</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                    <label class="label" for="cars">Car-Coach / Transport used</label>
+                    <select class="form-select" id="cars" name="cars" cars ngModel #cars="ngModel">
+                        <option selected>Choose...</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Very good">Very good</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Poor">Poor</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                    <label class="label" for="meals">Meals</label>
+                    <select class="form-select" id="meals" name="meals" meals ngModel #meals="ngModel">
+                        <option selected>Choose...</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Very good">Very good</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Poor">Poor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <label class="label" for="sightseeing">Sightseeing / Tours</label>
+                    <select class="form-select" id="sightseeing" name="sightseeing" sightseeing ngModel #sightseeing="ngModel">
+                        <option selected>Choose...</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Very good">Very good</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Poor">Poor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                    <label class="label" for="again">Would you travel again with Get2more Travel Destinations in the future?</label>
+                    <select class="form-select" id="again" name="again" again ngModel #again="ngModel">
+        <option selected>Choose...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                    <label class="label" for="impression">What was your impression of the tour and do you have any suggestions for improvements?</label>
+                    <input class="form-control" type="text" placeholder="Email" impression name="email" ngModel required #impression="ngModel">
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <label class="label" for="additional">Please include any additional information you would like us to know:</label>
+                    <input class="form-control" type="text" placeholder="Email" additional name="additional" ngModel required #additional="ngModel">
+
+                </div>
+
+            </div>
+
+
+            <button type="submit " value="Send ">Send</button>
+        </form>
+    </div>
+</div>
